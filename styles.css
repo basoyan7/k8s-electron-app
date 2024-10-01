@@ -1,0 +1,211 @@
+/* styles.css */
+
+/* Sidebar Logo */
+#sidebar-logo {
+  width: 80px; /* Adjust this value as needed */
+  height: auto;
+  max-width: 100%;
+  border-radius: 50%; /* Optional: Makes the logo circular */
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Adjust main content to account for sidebar width */
+main {
+  margin-left: 200px; /* Width of the sidebar */
+}
+
+/* Style the sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#sidebar .nav {
+  margin-top: 20px;
+}
+
+#sidebar .nav-item {
+  width: 100%;
+}
+
+#sidebar .btn {
+  width: calc(100% - 16px); /* Full width minus padding for the button */
+  margin: 5px 8px; /* Adjust margins to reduce square appearance */
+  text-align: left; /* Align text to the left */
+  padding: 5px 10px; /* Smaller padding for buttons */
+  font-size: 12px; /* Smaller font size for buttons */
+  border: none; /* Remove border */
+  background-color: transparent; /* Make background transparent */
+}
+
+#sidebar .btn:hover {
+  background-color: #e9ecef; /* Add hover background color */
+}
+
+#sidebar .dropdown-toggle::after {
+  float: right;
+  margin-top: 7px;
+}
+
+/* Adjustments for Collapsible Menu */
+#sidebar-menu .nav-link {
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Change text color and background for collapsed menus */
+#sidebar .nav-link:hover {
+  background-color: #313334; /* Gray background on hover */
+}
+
+#sidebar .nav-link {
+  color: white; /* White text color */
+  background-color: #6c757d; /* Gray background for collapsed menu headers */
+}
+
+#sidebar-menu .nav-link:hover {
+  background-color: #9da4ab; /* Darker gray on hover */
+}
+
+/* Workloads Submenu Styles */
+#workloadsSubMenu {
+  background-color: #f9f9f9; /* Lighter gray background for submenu */
+}
+
+#workloadsSubMenu .nav-item {
+  padding-left: 8px; /* Adjust padding for alignment */
+}
+
+#workloadsSubMenu .nav-item .btn {
+  background-color: #9da4ab; /* Secondary color for submenu buttons */
+  color: white;
+}
+
+#workloadsSubMenu .nav-item .btn:hover {
+  background-color: #9da4ab;
+}
+
+/* Network Submenu Styles */
+#networkSubMenu {
+  background-color: #f9f9f9; /* Lighter gray background for submenu */
+}
+
+#networkSubMenu .nav-item {
+  padding-left: 8px; /* Adjust padding for alignment */
+}
+
+#networkSubMenu .nav-item .btn {
+  background-color: #9da4ab; /* Match color to Workloads submenu */
+  color: white;
+}
+
+#networkSubMenu .nav-item .btn:hover {
+  background-color: #9da4ab; /* Match hover color to Workloads submenu */
+}
+
+/* Config Submenu Styles */
+#configSubMenu {
+  background-color: #f9f9f9; /* Lighter gray background for submenu */
+}
+
+#configSubMenu .nav-item {
+  padding-left: 8px; /* Adjust padding for alignment */
+}
+
+#configSubMenu .nav-item .btn {
+  background-color: #9da4ab; /* Match color to Workloads submenu */
+  color: white;
+}
+
+#configSubMenu .nav-item .btn:hover {
+  background-color: #9da4ab; /* Match hover color to Workloads submenu */
+}
+
+/* Header styles */
+.d-flex.align-items-center .form-group {
+  margin-bottom: 0;
+}
+
+.d-flex.align-items-center .form-check {
+  margin-bottom: 0;
+}
+
+/* Resource table styles */
+.table-responsive {
+  background-color: #e9ecef; /* Light gray background */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#resource-table {
+  font-size: 14px;
+  background-color: white; /* Keep table background white for readability */
+}
+
+#resource-table th {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+#resource-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the edit button */
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
+.btn-warning:hover {
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+/* Customize the modal */
+.modal-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+/* Style the textarea in the modal */
+#resource-yaml {
+  font-family: monospace;
+  font-size: 14px;
+  width: 100%;
+  height: 400px;
+  resize: vertical;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  main {
+    margin-left: 0;
+  }
+}

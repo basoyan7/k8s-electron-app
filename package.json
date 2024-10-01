@@ -1,0 +1,17 @@
+{
+  "name": "kubernetes-resource-editor",
+  "version": "1.0.0",
+  "description": "An Electron application to edit Kubernetes resources",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^0.17.0",
+    "electron": "^23.1.4",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}
