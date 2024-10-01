@@ -32,3 +32,4 @@ npx electron .
 ## Sample Documentation for Setup
 Below is a sample documentation format you can use for your README file or internal documentation:
 
+<img width="1750" alt="Screenshot 2024-10-01 at 16 57 30" src="https://github.com/user-attachments/assets/7e6a9f3d-6c7d-4861-b7e2-6b115c7d916e">
